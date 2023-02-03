@@ -83,7 +83,7 @@ footer .social img{
 }
 .home-title{
     color: #381D2A;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
@@ -106,7 +106,7 @@ footer .social img{
 }
 .msg h2{
     color: #381D2A;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 .msg p{
     color: #381D2A;
