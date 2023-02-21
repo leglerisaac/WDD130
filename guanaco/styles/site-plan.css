@@ -1,9 +1,10 @@
 /* CSS HEX
---copper: #BD732Fff;
---white: #FFFFFFff;
---ash-gray: #9FA599ff;
---oxford-blue: #051237ff;
---asparagus: #609534ff; */
+black = oxford-blue: #000230ff;
+--pumpkin: #F4761Fff;
+--light-sea-green: #0DA6A5ff;
+--french-gray: #B1B6BAff;
+white: #FEFEFEff;
+--avocado: #5F942Aff; */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 /* font-family: 'Lato', sans-serif; */
