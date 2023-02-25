@@ -1,0 +1,13 @@
+#grid-container{
+    background-color: green;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+.logo{
+    width: 10%;
+}
