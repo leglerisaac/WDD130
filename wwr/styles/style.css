@@ -183,6 +183,56 @@ footer .social img{
     padding-top: 15px;
 }
 
+/* faq.html rules */
+#faq-heading{
+    text-align: center;
+    margin-top: 75px;
+}
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 75px 150px;
+}
+.column1{
+    grid-column: 1/2;
+}
+.column2{
+    grid-column: 2/3;
+}
+.column3{
+    grid-column: 3/4;
+}
+.faq{
+    margin: 20px 10px;
+    padding: 25px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #EDA896;
+}
+#button-box{
+    margin: 0 auto;
+    justify-content: center;
+}
+.ask{
+    background-color: #EDA896;
+    color: #381D2A;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-style: solid;
+    border-radius: 10px;
+    border:#000000, 10px;
+    margin: 0 auto;
+}
+.ask:hover{
+    background-color: #EDA896;
+    color: #381D2A;
+    opacity: .6;
+    transform: scale(1.1);
+}
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
