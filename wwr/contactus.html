@@ -33,28 +33,27 @@
             </section>
         </div>
         <main class="home-grid">
-            <section class="rivers-card">
-                <img class="card-img" src="images/rivers.jpg" alt="Our Favorite River">
-                <img class="icon" src="images/river_icon.png" alt="River Icon">
-                <h2>Rivers</h2>
-            </section>
-            <section class="camping-card">
-                <img class="card-img" src="images/camping.jpg" alt="Campground">
-                <img class="icon" src="images/fire_icon.png" alt="Fire Icon">
-                <h2>Camping</h2>
-            </section>
-            <section class="rapids-card">
-                <img class="card-img" src="images/rapids.jpg" alt="Whitewater Raft">
-                <img class="icon" src="images/oars.png" alt="Oars Icon">
-                <h2>Rapids</h2>
-            </section>
-            <div id="background"></div>
-            <img class="mountains" src="images/mountains.jpg" alt="Mountains">
-            <section class="msg">
-                <h2>An Adrenaline-Filled Vacation For Everybody</h2>
-                <p>Get crazy on the wildest raftng trip you've ever been on. Featuring over 17 different rapids, our rivers are best in class. Experienced guides will help you every step of the way while not interfering with the thrill of rafting the wild rivers.</p>
-                <a class="join" href="rivers.html">Join Now</a>
-            </section>
+            <div id="feedback">
+            </div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                  <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" />
+                  </li>
+                  <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" />
+                  </li>
+                  <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </li>
+                  <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                </ul>
+              </form>
         </main>
         <footer>
             <p>Rafty Rafting &copy; 2023 - Isaac Legler</p>
@@ -73,5 +72,23 @@
             </div>
         </footer>
     </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+                       
 </body>
 </html>
