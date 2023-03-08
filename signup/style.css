@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;600&display=swap');
+/* #2f5494 blue */
+/* #f3f3f3 gray */
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 300;
+    color: #2f5494;
+}
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 950px;
+    margin: 0 auto;
+}
+img{
+    grid-column: 2;
+    grid-row: 2;
+    opacity: 0.15;
+    margin: -75px 75px;
+}
+form{
+    grid-column: 1;
+    grid-row: 2;
+    margin: 150px auto;
+    justify-content: center;
+    width: 400px;
+
+}
+#text{
+    width: 250px;
+    margin: 10px auto;
+    height: 50px;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 20px;
+    font-size: 1em;
+}
+::placeholder{
+    color:#999;
+}
+
+#email{
+    width: 250px;
+    margin: 5px auto;
+    height: 50px;
+    background-color: #f3f3f3;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 20px;
+    font-size: 1em;
+    color: #999;
+}
+
+button{
+    margin: 25px auto;
+    height: 50px;
+    width: 290px;
+    font-size: 1.25em;
+    font-weight: 100;
+    color: white;
+    background-color: #2f5494;
+    border:none;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #4f74B4;
+}
+#info{
+    grid-column: 1;
+    grid-row: 2;
+}
+.info1{
+    font-weight: 300;
+    font-size: 1em;
+    color: #999;
+    margin: 0 auto;
+    line-height: 20px;
+}
+.info2{
+    font-weight: 600;
+    font-size: 1em;
+    color: #999;
+    margin: 0 auto;
+    line-height: 20px;
+}
