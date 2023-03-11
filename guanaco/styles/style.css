@@ -146,3 +146,8 @@ footer a{
 footer a:hover{
     color: white;
 }
+
+/* allwords.html rules */
+.wordlist{
+    text-align: left;
+}
