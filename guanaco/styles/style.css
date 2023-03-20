@@ -11,6 +11,7 @@ avocado: #5F942Aff; */
 /* font-family: 'Lato', sans-serif; */
 :root{
     font-family: 'Lato', sans-serif;
+    color: #000230ff;
 }
 header{
     background-color: #0DA6A5ff;
@@ -26,7 +27,7 @@ nav{
 }
 nav a{
     text-align: center;
-    color: #381D2A;
+    color: #000230ff;
     text-decoration: none;
 }
 nav a:hover{
@@ -73,17 +74,19 @@ nav h1{
   }
   
   /* The navigation menu links */
-  .sidenav a {
+.sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
+    text-align: left;
+    padding-left: 25px;
     font-size: 25px;
-    color: #818181;
+    color: #000230ff;
     display: block;
-  }
+}
 
   /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: white;
 }
 body{
     background-color: #fff;
@@ -124,11 +127,14 @@ body{
 }
 h2{
     text-align: center;
+    margin-top: 100px;
+    color: #000230ff;
 }
 p{
     text-align: center;
     max-width: 1000px;
     margin: 0 auto;
+    color: #000230ff;
 }
 footer{
     height: 25px;
@@ -140,7 +146,7 @@ footer{
     align-items: center;
 }
 footer a{
-    color:black;
+    color: #000230ff;
     text-decoration: none;
 }
 footer a:hover{

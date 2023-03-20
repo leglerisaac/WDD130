@@ -11,10 +11,10 @@ white: #FEFEFEff;
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #609534ff   ;
+  --primary-color: white   ;
   --secondary-color: #9FA599ff ;
-  --accent1-color: #BD732Fff;
-  --accent2-color: #051237ff;
+  --accent1-color: #0DA6A5ff;
+  --accent2-color: #5F942Aff;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Lato";
@@ -22,14 +22,14 @@ white: #FEFEFEff;
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #051237ff;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #609534ff; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #9FA599ff  ;
-  --nav-link-color: #BD732Fff;
-  --nav-background-color: white;
-  --nav-hover-link-color: #9FA599ff;
-  --nav-hover-background-color: #609534ff;
+  --headline-color-on-color: #051237ff; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #051237ff; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #5F942Aff; /* paragraph text on a colored background */ 
+  --paragraph-background-color: white  ;
+  --nav-link-color: #051237ff;
+  --nav-background-color: #0DA6A5ff;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #0DA6A5ff;
 }
 
 
