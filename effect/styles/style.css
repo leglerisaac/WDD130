@@ -1,0 +1,51 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .bg-image {
+    /* Full height */
+    height: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Images used */
+  .img1 { background-image: url("images/capy.png"); }
+  .img2 { background-image: url("images/20200601_125921-2.jpg"); }
+  .img3 { background-image: url("images/IMG_20180614_134518.jpg"); }
+  .img4 { background-image: url("images/tux.jpeg"); }
+  .img5 { background-image: url("images/Screenshot from 2021-06-28 09-37-42.png"); }
+  .img6 { 
+    background-image: url("images/karen goonga.png"); 
+    height: 20%;
+    width: 50%;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 750px;
+    padding: 20px;
+    text-align: center;
+  }
