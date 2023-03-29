@@ -17,18 +17,20 @@ header{
     background-color: #0DA6A5ff;
     display: grid;
     grid-template-columns: 150px auto;
-    max-height: 75px;
+    height: 75px;
 }
-nav{
+header nav{
     display: flex;
     justify-content: space-around;
+    background-color: #0DA6A5ff;
     height: 75px;
-    margin: 20px 20px;
+    margin: 0px 20px;
 }
-nav a{
+header nav a{
     text-align: center;
     color: #000230ff;
     text-decoration: none;
+    align-self: center;
 }
 nav a:hover{
     color: white;
@@ -48,13 +50,18 @@ nav a:hover{
 nav h1{
     float: left;
     font-size: 3em;
-    margin: -25px 0px;
     text-align: center;
 }
-
+#search{
+    align-self: center;
+    margin-right: -115px;
+}
+input{
+    height: 16px;
+}
 .icon{
     max-width: 20px;
-    margin: -6px -5px;
+    margin: -7px -5px;
     border: gray;
     border-style:solid;
     border-width: 1px;
@@ -95,18 +102,25 @@ body{
     margin: 0;
     padding: 0;
 }
-#hero-msg{
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: 100px;
-    z-index: 2;
-    margin-bottom: -500px;
+main{
+    margin-left: 160px;
+}
+#hero{
+    display: flex;
+    margin: 0 auto;
     position: relative;
-    padding-top: 200px;
+    text-align: center;
+}
+#hero-msg{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #hero-msg h1, #hero-msg h4{
-    text-align: center;
-    color: #5F942Aff;
+    /* text-align: center; */
+    color: #000230ff;
     z-index: 2;
 }
 #hero-msg h1{
@@ -115,15 +129,11 @@ body{
 #hero-msg h4{
     font-size: 2em;
 }
-#hero{
-    width: 1500px;
-    margin-left: 225px;
-}
 .hero-img{
-    max-width: 99%;
-    margin: 100px auto;
-    display: block;
-    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0));
 }
 h2{
     text-align: center;
@@ -156,4 +166,17 @@ footer a:hover{
 /* allwords.html rules */
 .wordlist{
     text-align: left;
+}
+
+/* letter page rules */
+
+
+
+@media screen and (max-width: 900px) {
+    #search{
+        display: none;
+    }
+    #link{
+        display: none;
+    }
 }
