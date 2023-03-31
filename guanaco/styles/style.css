@@ -17,13 +17,13 @@ header{
     background-color: #0DA6A5ff;
     display: grid;
     grid-template-columns: 150px auto;
-    height: 75px;
+    height: 100px;
 }
 header nav{
     display: flex;
     justify-content: space-around;
     background-color: #0DA6A5ff;
-    height: 75px;
+    height: 100px;
     margin: 0px 20px;
 }
 header nav a{
@@ -41,10 +41,14 @@ nav a:hover{
     max-height: 0px;
     z-index: 2;
 }
+#link{
+    font-size: 1.25em;
+    margin-left: 75px;
+}
 .logo{
     float: left;
     max-width: 150px;
-    margin: 15px 30px;
+    margin: 39px 30px;
     z-index: 2;
 }
 nav h1{
@@ -58,14 +62,22 @@ nav h1{
 }
 input{
     height: 16px;
+    width: 250px;
+    padding: 8px;
+    font-size: 1em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
 }
 .icon{
-    max-width: 20px;
-    margin: -7px -5px;
+    max-width: 33px;
+    margin: -10px -5px;
     border: gray;
     border-style:solid;
     border-width: 1px;
     background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .sidenav {
     width: 160px; /* Set the width of the sidebar */
@@ -75,7 +87,7 @@ input{
     left: 0;
     background-color: #B1B6BAff; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    margin-top: 75px;
+    margin-top: 100px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -144,10 +156,13 @@ h2{
     color: #000230ff;
 }
 p{
-    text-align: center;
     max-width: 1000px;
-    margin: 0 auto;
     color: #000230ff;
+}
+.info{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px 200px;
 }
 footer{
     height: 25px;
@@ -168,7 +183,25 @@ footer a:hover{
 
 /* allwords.html rules */
 .wordlist{
+    margin: 0 auto;
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 15% 1fr;
     text-align: left;
+}
+.word{
+    text-align: left;
+    padding: 20px;
+    border: 2px solid;
+    border-right: none;
+    border-color: #000;
+    font-weight: 800;
+}
+.definition{
+    text-align: left;
+    padding: 20px;
+    border: 2px solid;
+    border-color: #000;
 }
 
 /* letter page rules */
